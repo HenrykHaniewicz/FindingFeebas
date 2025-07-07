@@ -108,7 +108,7 @@ class Route119:
         tid_label.place(x=320*1.5/7+320, y=200, anchor="w")
 
         sv = StringVar()
-        sv.trace("w", lambda name, index, mode, sv=sv: self.maxNumberCallback(sv, 0xFFFF, 0))
+        sv.trace_add("write", lambda *args, sv=sv: self.maxNumberCallback(sv, 0xFFFF, 0))
         self.tid_entry = Entry(root, validate="key", validatecommand=validate_command_function, textvariable=sv, width=10, font=desired_font)
         self.tid_entry.place(x=320*3.5/7+320, y=200, anchor="w")
 
@@ -116,7 +116,7 @@ class Route119:
         lot_label.place(x=320*1.5/7+320, y=225, anchor="w")
 
         sv = StringVar()
-        sv.trace("w", lambda name, index, mode, sv=sv: self.maxNumberCallback(sv, 0xFFFF, 1))
+        sv.trace_add("write", lambda *args, sv=sv: self.maxNumberCallback(sv, 0xFFFF, 1))
         self.lot_enrty = Entry(root, validate="key", validatecommand=validate_command_function, textvariable=sv, width=10, font=desired_font)
         self.lot_enrty.place(x=320*3.5/7+320, y=225, anchor="w")
         
