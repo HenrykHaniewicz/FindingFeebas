@@ -18,7 +18,7 @@ from ttkwidgets.autocomplete import AutocompleteCombobox
 from PIL import Image, ImageTk
 
 ROUTE119_PATH              = "./Resources/Images/Hoenn_Route_119_E.png"
-FINDING_FEEBAS_ART_PATH    = "./Resources/Images/Finding_Feebas_BG.jpg"
+FINDING_FEEBAS_ART_PATH    = "./Resources/Images/Finding_Feebas_BG.png"
 FEEBAS_SPOT_INDICATOR_PATH = "./Resources/Images/Feebas_Spot_Indicator.png"
 ROUTE119_INITAL_X_POS      = 192
 ROUTE119_INITAL_Y_POS      = 960

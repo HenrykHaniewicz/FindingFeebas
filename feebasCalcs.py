@@ -14,7 +14,7 @@ from tkinter import *
 from trendyPhrase import group_conditions, group_lifestyles, group_hobbies, DewfordTrend
 from feebasCoordinates import FEEBAS_BRIDGE_TILES, FEEBAS_COORDINATES_ORIGINAL, FEEBAS_COORDINATES_NEW
 
-DEBUG_ENABLED = False
+DEBUG_ENABLED = True
 
 class FeebasCalculator:
     """
